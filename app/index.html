@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <base href="/">
+    <title>Open Andela</title>
+    <meta name="description" content="open andela">
+    <meta name="keywords" content="open andela, computer, empowerment, training">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/openA.png">
+    <link rel="stylesheet" type="text/css" href="lib/css/app.css">
+    <script type="text/javascript" src="lib/js/app.js"></script>
+</head>
+
+<body ng-controller="OpenAndelaCtrl">
+    <div class="open-andela">
+        <section class="container-fluid page-one">
+            <div class="row overlay"></div>
+            <div class="row first-page-landing">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#open-andela" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand brand-logo" href="#"><span><img class="" src="../assets/img/lagos.png">Lagos state government</span></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="open-andela">
+                            <ul class="nav navbar-nav pull-right gmt">
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#register">Registration</a></li>
+                                <li><a href="#">GET STARTED</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="col-xs-12 col-sm-7 col-sm-offset-1 landing-text">
+                    <h3>Dream of using technology to change the world?</h3>
+                    <h6>Join the movement to ensure that while the digital revolution may have begun in silicon valley, its future will be written in Lagos</h6>
+                    <div class="home-apply-link"><a href="">click to apply</a> </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid page-two">
+            <div class="row lagos-study">
+                <div class="col-xs-12 text-center">
+                    <h4 class="">THE LAGOS STUDY PROGRAM</h4>
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 lagos-study-text">
+                    <P> The Open Andela Bootcamp is an accessible version of the original Andela Homestudy Program. During this program, You will be taught the basics about coding from our home study curriculum. This opportunity will give you and all candidates a higher chance of having a successful career in technology.</P>
+                    <p> It is a 11-week program to introduce You to the practical concepts of Software Development with an eye to help develop your career in the ICT space. This program is made possible by a partnership between Andela and the Lagos State Government through the Ministry of Wealth Creation and Employment and Ministry of Science and Technology for sustainable collaboration in technology skill acquisition and employability.</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 application-process">
+                    <div>
+                        <h4>APPLICATION PROCESS</h4>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding: 0">
+                    <div class="col-xs-11 col-sm-4 col-sm-offset-1" style="margin-bottom: 5%;">
+                        <div class="application-stage" ng-class="{clickedDiv: process.id == currentIndex}" ng-repeat="process in application_process" ng-click="showClicked(process.id)">
+                            {{process.stage}}</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6" style="margin-bottom: 5%;">
+                        <div ng-show="process.id == currentIndex" ng-repeat="process in application_process">
+                            {{process.process}}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid page-three">
+            <div class="row">
+                <div class="apply">
+                    <div class="apply-now-link">
+                        <a href="https://boards.greenhouse.io/andela/jobs/185972#.VvFdvBIrJP0" class="btn btn-primary apply-now">CLICK HERE TO APPLY NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 eligible-div">
+                    <div class="clickable" ng-click="toggleEligibilityView()">
+                        <h4>Click here to see who is eligible</h4>
+                        <div class="glyphicon glyphicon-chevron-down"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 criteria" ng-show="eligibleViewStatus">
+                    <h3 class="text-center">Eligibility Criteria</h3>
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-1">
+                                <h4><span class="glyphicon glyphicon-ok okay-color"></span></h4>
+                            </div>
+                            <div class="col-xs-10">
+                                <h4>You must be 18 or older</h4>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-1">
+                                <h4><span class="glyphicon glyphicon-ok okay-color"></span></h4>
+                            </div>
+                            <div class="col-xs-10">
+                                <h4>Open Andela does not have any degree or diploma requirements.</h4>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-1">
+                                <h4><span class="glyphicon glyphicon-ok okay-color"></span></h4>
+                            </div>
+                            <div class="col-xs-10">
+                                <h4>You must be a resident of Lagos state and have a <a href="http://www.lagosresidents.gov.ng/home/">LASRRA Identification</a> number</h4>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-1">
+                                <h4><span class="glyphicon glyphicon-ok okay-color"></span></h4>
+                            </div>
+                            <div class="col-xs-10">
+                                <h4>Most importantly, you must embody Andela’s values: Excellence, Passion, Integrity and Collaboration</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="deadline">Lagos 2016 Application Deadline</h4>
+                </div>
+                <div class="col-xs-12">
+                    <h4 class="deadline-date" id="deadline-date"></h4>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-2 timerDiv" id="timerDiv">
+                    <div class="col-xs-2">
+                        <div class="thumbnail remove-border">
+                            <div class="months"></div>
+                            <div class="caption">
+                                <div>Months</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail remove-border">
+                            <div class="days"></div>
+                            <div class="caption">
+                                <div>Days</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail remove-border">
+                            <div class="hours"></div>
+                            <div class="caption">
+                                <div>Hours</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail remove-border">
+                            <div class="minutes"></div>
+                            <div class="caption">
+                                <div>Minutes</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail remove-border">
+                            <div class="seconds"></div>
+                            <div class="caption">
+                                <div>Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <h4 class="deadline-date">Deadline: May 1st   |   Interviews: May 6th-May 8th   |   Boot camp: May 23rd – June 3rd</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="apply">
+                    <div class="apply-now-link">
+                        <a href="https://boards.greenhouse.io/andela/jobs/185972#.VvFdvBIrJP0" class="btn btn-primary apply-now">CLICK HERE TO APPLY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid page-four">
+            <div class="row benefits">
+                <div class="col-xs-12 benefits-main">
+                    <h3>Benefits</h3>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                    <h4>Program Benefits</h4>
+                    <div class="col-xs-12 text-left">
+                        <ul>
+                            <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </li>
+                            <li>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
+                            <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h4>Career Benefits</h4>
+                    <div class="col-xs-12 text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid page-five text-center">
+            <div class="row last-page-one">
+                <div class="col-xs-12 overlay-last-page">
+                </div>
+                <div class="col-xs-12 last-page-first">
+                    <div id="carousel-testimonies" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators text-carousel-indicator" style="bottom: -87px">
+                            <li data-target="#carousel-testimonies" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-testimonies" data-slide-to="1"></li>
+                            <li data-target="#carousel-testimonies" data-slide-to="2"></li>
+                            <li data-target="#carousel-testimonies" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner text-carousel" role="listbox">
+                            <div class="item active">
+                                <div class="item-text">
+                                    <h3>From day one, our Andela developers were fully committed to the product we were building.</h3>
+                                    <p>Chris Conlin / SVP Software Development, 2U</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-text">
+                                    <h3>Our Andela developers were immediately able to hit the ground running.</h3>
+                                    <p>Greg Spear / VP Product Development, Touchstorm</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-text">
+                                    <h3>Our Andela developers are fantastic. They are gifted, focused, and responsive.</h3>
+                                    <p>Bob Calise / CTO, CommunityCo</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-text">
+                                    <h3>With Andela, we actually took a project that took 90 days and did it in 45.</h3>
+                                    <p>
+                                        Greg Brauner / Director Of Growth Marketing, Udacity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row last-page-two">
+                <div class="col-xs-12" style="color: white">
+                    <h3>FAQ!</h3>
+                    <h4>For enquiries, please read the application <a href="">FAQ</a>, if you still have any unanswered questions, please send an email to 1@lagos.com</h4>
+                </div>
+            </div>
+            <div class="row last-page-three">
+                <div class="col-xs-12 overlay-last-page">
+                </div>
+                <div class="col-xs-12 about-page">
+                    <h3>About us</h3>
+                    <h4>The Open Andela Bootcamp is an accessible version of the original Andela Homestudy Program. During this program, You will be taught the basics about coding from our home study curriculum. This opportunity will give you and all candidates a higher chance of having a successful career in technology.</h4>
+                    <h4> It is a 11-week program to introduce You to the practical concepts of Software Development with an eye to help develop your career in the ICT space. This program is made possible by a partnership between Andela and the Lagos State Government through the Ministry of Wealth Creation and Employment and Ministry of Science and Technology for sustainable collaboration in technology skill acquisition and employability.
+                        </h4>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
