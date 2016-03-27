@@ -7117,8 +7117,11 @@ nav ul li:last-child {
     .deadline::after {
         display: none;
     }
+   
+}
+@media only screen and (min-width:0px) and (max-width:408px) {
     .overlay-last-page,
     .last-page-three {
-        min-height: 60vh
+        min-height: 71vh
     }
 }
