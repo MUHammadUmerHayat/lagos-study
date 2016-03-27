@@ -16,21 +16,28 @@
 html,
 body {
     height: 100%;
-    font-family: din;
+    /*font-family: din;*/
     width: 100%;
 }
 
+.about-page h4 {
+    text-align: left;
+    font-weight: 300;
+    font-family: din;
+}
+
 .page-one,
-.page-two,
-.page-three,
 .page-five,
 .overlay {
     min-height: 100vh;
 }
 
+.page-two,
+.page-three,
 .page-four {
     min-height: 60vh;
 }
+
 .page-one {
     background-image: url('../img/background.jpg');
 }
@@ -41,7 +48,7 @@ body {
 }
 
 .last-page-two {
-    min-height: 16vh;
+    min-height: 15vh;
     background: #23d9da;
 }
 
@@ -52,6 +59,7 @@ body {
 
 .last-page-one {
     background-image: url('../img/bg2.jpg');
+    background-size: cover;
 }
 
 .last-page-three {
@@ -120,10 +128,10 @@ body {
 }
 
 .criteria {
-    -webkit-transition: all linear 0.7s;
-    -moz-transition: all linear 0.7s;
-    -o-transition: all linear 0.7s;
-    transition: all linear 0.7s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
     display: block!important;
 }
 
@@ -150,10 +158,10 @@ body {
 .benefits {
     text-align: center;
     margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .benefits-main {
-    margin-top: 2%;
     margin-bottom: 2%;
 }
 
@@ -162,7 +170,6 @@ body {
     font-family: dimBold;
     font-size: 3em;
     font-weight: 900;
-    /*margin-left: 8%;*/
 }
 
 nav ul li a {
@@ -175,6 +182,22 @@ nav ul li a {
 .home-apply-link a:hover {
     color: #FFF;
     text-decoration: none !important;
+}
+
+.brand-logo:link,
+.brand-logo:visited,
+.brand-logo:focus {
+    color: #FFF;
+    text-decoration: none !important;
+}
+
+.brand-logo:hover {
+    text-decoration: none !important;
+    color: #23c9da;
+}
+
+.home-apply-link:hover {
+    background: #23c9da;
 }
 
 nav ul li.active > a,
@@ -198,13 +221,20 @@ nav ul li:last-child {
     background: #23d9da !important;
 }
 
-.overlay,
-.overlay-last-page {
+.overlay {
     background: black;
-    opacity: 0.45;
+    opacity: 0.55;
 }
 
 .overlay-last-page {
+    background: black;
+    opacity: 0.55;
+    min-height: 42vh;
+}
+
+.overlay-last-page1 {
+    background: black;
+    opacity: 0.25;
     min-height: 42vh;
 }
 
@@ -221,7 +251,6 @@ nav ul li:last-child {
 
 .landing-text {
     color: white;
-    /*position: absolute;*/
 }
 
 .home-apply-link {
@@ -262,6 +291,73 @@ nav ul li:last-child {
     margin: auto;
 }
 
-.gmt {
+.nav-links {
     margin-top: 30px;
+}
+
+.deadline::before,
+.deadline::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid RGB(205, 206, 207);
+    width: 23%;
+    top: 70%;
+}
+
+.deadline::before,
+.benefits-text::before {
+    left: 13%;
+}
+
+.deadline::after,
+.benefits-text::after {
+    right: 13%;
+}
+
+.program::before {
+    left: 10%;
+}
+
+.program::after {
+    right: 10%;
+}
+
+.program::before,
+.program::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid RGB(205, 206, 207);
+    width: 23%;
+    top: 50%;
+}
+
+.benefits-text::before,
+.benefits-text::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid RGB(205, 206, 207);
+    width: 23%;
+    top: 50%;
+}
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .program::before,
+    .program::after {
+        display: none;
+    }
+    .benefits-text::before,
+    .benefits-text::after {
+        display: none;
+    }
+    .deadline::before,
+    .deadline::after {
+        display: none;
+    }
+    .overlay-last-page,
+    .last-page-three {
+        min-height: 60vh
+    }
 }
