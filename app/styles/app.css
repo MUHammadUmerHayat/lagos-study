@@ -1,0 +1,372 @@
+@font-face {
+    font-family: dinBold;
+    src: url('../fonts/dinBold.otf');
+}
+
+@font-face {
+    font-family: dinMedium;
+    src: url('../fonts/dinMedium.otf');
+}
+
+@font-face {
+    font-family: din;
+    src: url('../fonts/din.otf');
+}
+
+html,
+body {
+    height: 100%;
+    /*font-family: din;*/
+    width: 100%;
+}
+
+.about-page h4 {
+    text-align: left;
+    font-weight: 300;
+    font-family: din;
+}
+
+.page-one,
+.page-five,
+.overlay {
+    min-height: 100vh;
+}
+
+.page-two,
+.page-three,
+.page-four {
+    min-height: 60vh;
+}
+
+.page-one {
+    background-image: url('../img/background.jpg');
+}
+
+.last-page-one,
+.last-page-three {
+    min-height: 42vh
+}
+
+.last-page-two {
+    min-height: 15vh;
+    background: #23d9da;
+}
+
+.remove-border {
+    border: none;
+    text-align: center;
+}
+
+.last-page-one {
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+}
+
+.last-page-three {
+    background-image: url('../img/how-will-lagos-spend-its-budget.jpg');
+}
+
+.lagos-study {
+    background: RGB(246, 247, 248);
+}
+
+.lagos-study h4,
+.lagos-study-text {
+    margin-bottom: 3%;
+}
+
+.lagos-study h4,
+.application-process {
+    margin-top: 3%;
+}
+
+.brand-logo {
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.application-process {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.apply {
+    min-height: 100px;
+    background: rgba(10, 14, 10, 0.85);
+    width: 100%;
+}
+
+.application-stage {
+    background: RGB(242, 243, 244);
+    color: #23d9da;
+    margin: 5px auto;
+    min-height: 40px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.application-stage:hover,
+.clickedDiv,
+.apply-now:hover {
+    background: #23d9da;
+    color: black;
+}
+
+.apply-now {
+    margin: 30px auto;
+    background: RGB(242, 243, 244);
+    height: 44px;
+    color: black;
+    padding: 11px;
+}
+
+.eligible-div {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.criteria {
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    display: block!important;
+}
+
+.deadline,
+.deadline-date {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.caption div {
+    font-size: 0.5em !important;
+    font-weight: 200;
+}
+
+.deadline-date {
+    color: #23d9da;
+    margin-bottom: 3%;
+}
+
+.okay-color {
+    color: #23d9da;
+}
+
+.benefits {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.benefits-main {
+    margin-bottom: 2%;
+}
+
+.timerDiv {
+    color: #000;
+    font-family: dimBold;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.home-apply-link a:link,
+.home-apply-link a:visited,
+.home-apply-link a:focus,
+.home-apply-link a:hover {
+    color: #FFF;
+    text-decoration: none !important;
+}
+
+.brand-logo:link,
+.brand-logo:visited,
+.brand-logo:focus {
+    color: #FFF;
+    text-decoration: none !important;
+}
+
+.brand-logo:hover {
+    text-decoration: none !important;
+    color: #23c9da;
+}
+
+.home-apply-link:hover {
+    background: #23c9da;
+}
+
+nav ul li.active > a,
+nav ul li.active > a:hover {
+    color: white;
+    cursor: default;
+    background-color: #23d9da;
+    text-decoration: none !important;
+}
+
+nav ul li:last-child {
+    border-radius: 2px;
+    background: #23d9da;
+}
+
+.navbar-toggle {
+    border: 2px solid #23d9da !important;
+}
+
+.navbar-toggle .icon-bar {
+    background: #23d9da !important;
+}
+
+.overlay {
+    background: black;
+    opacity: 0.55;
+}
+
+.overlay-last-page {
+    background: black;
+    opacity: 0.55;
+    min-height: 42vh;
+}
+
+.overlay-last-page1 {
+    background: black;
+    opacity: 0.25;
+    min-height: 42vh;
+}
+
+.first-page-landing {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    min-height: 100%;
+}
+
+.text-carousel {
+    margin-top: 3%;
+}
+
+.landing-text {
+    color: white;
+}
+
+.home-apply-link {
+    background: #23d9da;
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    color: white;
+    padding: 8px 0;
+    border-radius: 2px;
+    margin: 7% 0;
+}
+
+.home-apply-link a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.landing-text h3 {
+    font-size: 3em;
+    margin-top: 20%;
+}
+
+.landing-text h6 {
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.about-page,
+.last-page-first {
+    position: absolute;
+    color: white;
+}
+
+.apply-now-link {
+    width: 210px;
+    margin: auto;
+}
+
+.nav-links {
+    margin-top: 30px;
+}
+
+.deadline::before,
+.deadline::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid RGB(205, 206, 207);
+    width: 23%;
+    top: 70%;
+}
+
+.deadline::before,
+.benefits-text::before {
+    left: 13%;
+}
+
+.deadline::after,
+.benefits-text::after {
+    right: 13%;
+}
+
+.program::before {
+    left: 10%;
+}
+
+.program::after {
+    right: 10%;
+}
+
+.program::before,
+.program::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid RGB(205, 206, 207);
+    width: 23%;
+    top: 50%;
+}
+
+.benefits-text::before,
+.benefits-text::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid RGB(205, 206, 207);
+    width: 23%;
+    top: 50%;
+}
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .program::before,
+    .program::after {
+        display: none;
+    }
+    .benefits-text::before,
+    .benefits-text::after {
+        display: none;
+    }
+    .deadline::before,
+    .deadline::after {
+        display: none;
+    }
+   
+}
+@media only screen and (min-width:0px) and (max-width:330px) {
+    .overlay-last-page,
+    .last-page-three {
+        min-height: 71vh
+    }
+}
+@media only screen and (min-width:330px) and (max-width:600px) {
+    .overlay-last-page,
+    .last-page-three {
+        min-height: 64vh
+    }
+}
