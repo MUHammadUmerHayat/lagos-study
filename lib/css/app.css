@@ -7119,9 +7119,15 @@ nav ul li:last-child {
     }
    
 }
-@media only screen and (min-width:0px) and (max-width:408px) {
+@media only screen and (min-width:0px) and (max-width:330px) {
     .overlay-last-page,
     .last-page-three {
         min-height: 71vh
+    }
+}
+@media only screen and (min-width:330px) and (max-width:600px) {
+    .overlay-last-page,
+    .last-page-three {
+        min-height: 64vh
     }
 }
