@@ -50,7 +50,7 @@ angular.module('app.controller', [])
             var timeinterval = setInterval(updateClock, 1000);
         }
 
-        var deadline = new Date("2016-3-31");
+        var deadline = new Date("2016-5-18");
         initializeClock(deadline);
         $scope.toggleEligibilityView = function(){
             $scope.eligibleViewStatus = !$scope.eligibleViewStatus;

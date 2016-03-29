@@ -23,7 +23,7 @@ body {
 .about-page h4 {
     text-align: left;
     font-weight: 300;
-    font-family: din;
+    /*font-family: din;*/
 }
 
 .page-one,
@@ -112,7 +112,13 @@ body {
     background: #23d9da;
     color: black;
 }
-
+.application-stage:hover{
+    cursor: pointer;
+}
+.apply-now:focus{
+    background: RGB(242, 243, 244);
+    color: black;
+}
 .apply-now {
     margin: 30px auto;
     background: RGB(242, 243, 244);
@@ -167,7 +173,7 @@ body {
 
 .timerDiv {
     color: #000;
-    font-family: dimBold;
+    /*font-family: dimBold;*/
     font-size: 3em;
     font-weight: 900;
 }
