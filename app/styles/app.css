@@ -57,6 +57,10 @@ body {
     text-align: center;
 }
 
+.navbar-top-margin {
+    margin-top: -22px;
+}
+
 .last-page-one {
     background-image: url('../img/bg2.jpg');
     background-size: cover;
@@ -112,13 +116,16 @@ body {
     background: #23d9da;
     color: black;
 }
-.application-stage:hover{
+
+.application-stage:hover {
     cursor: pointer;
 }
-.apply-now:focus{
+
+.apply-now:focus {
     background: RGB(242, 243, 244);
     color: black;
 }
+
 .apply-now {
     margin: 30px auto;
     background: RGB(242, 243, 244);
@@ -362,17 +369,43 @@ nav ul li:last-child {
     .deadline::after {
         display: none;
     }
-   
 }
+
 @media only screen and (min-width:0px) and (max-width:330px) {
     .overlay-last-page,
     .last-page-three {
         min-height: 71vh
     }
 }
+
 @media only screen and (min-width:330px) and (max-width:600px) {
     .overlay-last-page,
     .last-page-three {
         min-height: 64vh
     }
+}
+
+@media only screen and (min-width:0px) and (max-width:767px) {
+    .navbar-top-margin {
+        margin-top: 0;
+    }
+}
+
+.question {
+    min-height: 50px;
+    min-width: 300px;
+    background: #23ddad;
+    padding: 14px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 3px;
+    margin: 5px auto;
+}
+
+.answer {
+    text-align: center;
+    min-height: 50px;
+    background: #f0f0f0;
+    margin: -4px 0;
+    padding: 10px 5px;
 }
