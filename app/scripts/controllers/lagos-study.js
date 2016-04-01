@@ -10,12 +10,15 @@ angular.module('app.controller', [])
         var deadlineDate = document.getElementById('deadline-date');
         $scope.currentIndex = 0;
         $scope.application_process = [
-            { id: 0, stage: "STAGE 1: Application", process: "First you’ll complete a free application so we can learn more about you."},{ id: 1, stage: "STAGE 2: Aptitude Assessment", process: "Once we receive your application, we’ll email you an online test that measures logical reasoning and personality fit. (You’ll receive an email with next steps within 2 days of applying)"},{ id: 2, stage: "STAGE 3: 11 Weeks Training ", process: "Successful applicants participate in a eleven-week, full-time training at an Lagos E- Learning center."}
+            { id: 0, stage: "STAGE 1: Application", process: "First you’ll complete a free application so we can learn more about you." },
+            { id: 1, stage: "STAGE 2: Aptitude Assessment", process: "Once we receive your application, we’ll email you an online test that measures logical reasoning and personality fit. (You’ll receive an email with next steps within 2 days of applying)" },
+            { id: 2, stage: "STAGE 3: 11 Weeks Training ", process: "Successful applicants participate in a eleven-week, full-time training at an Lagos E- Learning center." }
         ];
         $scope.eligibleViewStatus = false;
         $scope.showClicked = function(id) {
             $scope.currentIndex = id;
         };
+
         function getTimeRemaining(endtime) {
             var timeDifference = Date.parse(endtime) - Date.parse(new Date());
             return {
@@ -52,7 +55,7 @@ angular.module('app.controller', [])
 
         var deadline = new Date("2016-5-18");
         initializeClock(deadline);
-        $scope.toggleEligibilityView = function(){
+        $scope.toggleEligibilityView = function() {
             $scope.eligibleViewStatus = !$scope.eligibleViewStatus;
         };
 

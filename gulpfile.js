@@ -3,7 +3,7 @@ var gulp = require('gulp'),
   clean = require('gulp-clean'),
   concat = require('gulp-concat'),
   connect = require('gulp-connect'),
-  minify = require('gulp-minify'),
+  minify = require('gulp-cssmin'),
   uglify = require('gulp-uglify');
 
 var filePaths = {
@@ -11,7 +11,6 @@ var filePaths = {
     'bower_components/jquery/dist/jquery.js',
     'bower_components/bootstrap/dist/js/bootstrap.js',
     'bower_components/angular/angular.js',
-    'bower_components/angular-animate/angular-animate.js',
     'app/scripts/**/*.js'
   ],
   styles: [
@@ -87,7 +86,9 @@ gulp.task('styles', function(){
 gulp.task('watch', function() {
   gulp.watch(filePaths.scripts, ['scripts']);
 
-  gulp.watch(filePaths.styles, ['copy:fonts','styles']);
+  gulp.watch(filePaths.styles, ['copy:fonts', 'styles']);
+
+  // gulp.watch(filePaths.fonts, ['copy:fonts']);
 
 });
 

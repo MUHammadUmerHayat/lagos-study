@@ -1,1 +1,1 @@
-angular.module('app', ['app.controller', 'ngAnimate']);
+angular.module('app', ['app.controller']);
