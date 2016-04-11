@@ -28,13 +28,13 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand brand-logo" href="#"><span><img class="" src="assets/img/lagos.png">Lagos State Ministry of Employment and Wealth Creation</span></a>
+                            <a class="navbar-brand brand-logo" href="#"><span class="brand-img"><img class="" src="assets/img/lagos.png"></span><span class="brand-text">Lagos State Ministry of Employment and Wealth Creation</span></a>
                         </div>
                         <div class="collapse navbar-collapse" id="open-andela">
                             <ul class="nav navbar-nav pull-right nav-links">
                                 <li><a href="#about">About</a></li>
-                                <li><a href="#register">Registration</a></li>
-                                <li><a href="#getting_started">GET STARTED</a></li>
+                                <li><a href="http://andela.github.io/homestudy">Curriculum</a></li>
+                                <li><a a href="https://boards.greenhouse.io/andela/jobs/185972#.VvFdvBIrJP0" target="_blank">Apply Now</a></li>
                             </ul>
                         </div>
                     </div>
@@ -63,11 +63,11 @@
                     </div>
                 </div>
                 <div class="col-xs-12" style="padding: 0">
-                    <div class="col-xs-11 col-sm-4 col-sm-offset-1" style="margin-bottom: 5%;">
+                    <div class="col-xs-5 col-sm-4 col-sm-offset-1" style="margin-bottom: 5%;">
                         <div class="application-stage" ng-class="{clickedDiv: process.id == currentIndex}" ng-repeat="process in application_process" ng-click="showClicked(process.id)">
                             {{process.stage}}</div>
                     </div>
-                    <div class="col-xs-12 col-sm-6" style="margin-bottom: 5%;">
+                    <div class="col-xs-7 col-sm-6" style="margin-bottom: 5%;">
                         <div ng-show="process.id == currentIndex" ng-repeat="process in application_process">
                             {{process.process}}</div>
                     </div>
@@ -252,7 +252,7 @@
                     <h4>FAQ!</h4>
                 </div>
                 <div class="col-xs-12 col-sm-11 col-sm-offset-1" style="color: white">
-                    <div class="">For enquiries, please read the application <a data-toggle="modal" data-target="#faq">FAQ</a>, if you still have any unanswered questions, please send an email to admissions@andela.comFor enquiries, please read the application</div>
+                    <div class="" style="padding: 0 0 2% 0">For enquiries, please read the application <a data-toggle="modal" data-target="#faq">FAQ</a>, if you still have any unanswered questions, please send an email to admissions@andela.comFor enquiries, please read the application</div>
                 </div>
             </div>
             <div class="row last-page-three">
