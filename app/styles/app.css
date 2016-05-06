@@ -1,0 +1,500 @@
+
+@font-face {
+    font-family: dinBold;
+    src: url(../fonts/dinBold.otf)
+}
+
+@font-face {
+    font-family: dinMedium;
+    src: url(../fonts/dinMedium.otf)
+}
+
+@font-face {
+    font-family: din;
+    src: url(../fonts/din.otf)
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    line-height: 25px;
+    letter-spacing: 0;
+    font-weight: 200;
+    font-style: normal;
+    font-family: din
+}
+
+.about-page div {
+    font-weight: 300;
+    margin-top: 3%
+}
+
+.overlay,
+.page-one {
+    min-height: 680px
+}
+
+.page-five {
+    min-height: 600px
+}
+
+.page-four,
+.page-three,
+.page-two {
+    min-height: 500px
+}
+
+.page-one {
+    background-image: url(../img/background.jpg)
+}
+
+.last-page-one,
+.last-page-three {
+    min-height: 323px
+}
+
+.last-page-two {
+    min-height: 100px;
+    background: #FEA52F;
+    padding: 30px 0
+}
+
+.remove-border {
+    border: none;
+    text-align: center
+}
+
+.navbar-top-margin {
+    margin-top: -17px
+}
+
+.last-page-one {
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    -moz-background-position: center;
+    -webkit-background-position: center
+}
+
+.last-page-three {
+    background-image: url(../img/road.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    -moz-background-position: center;
+    -webkit-background-position: center;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat
+}
+
+.lagos-study {
+    background: RGB(246, 247, 248);
+    padding: 60px 0
+}
+
+.lagos-study h4,
+.lagos-study-text {
+    margin-bottom: 3%
+}
+
+.application-process,
+.lagos-study h4 {
+    margin-top: 3%
+}
+
+.brand-logo {
+    color: #fff;
+    font-size: .9em;
+    text-transform: uppercase;
+    margin-left: 10px
+}
+
+.application-process {
+    margin-bottom: 3%;
+    text-align: center
+}
+
+.apply {
+    min-height: 100px;
+    background: rgba(10, 14, 10, .85);
+    width: 100%
+}
+
+.application-stage {
+    background: RGB(242, 243, 244);
+    color: #000;
+    margin: 5px auto;
+    min-height: 40px;
+    padding: 10px;
+    border-radius: 3px
+}
+
+.application-stage:hover,
+.apply-now:focus,
+.apply-now:hover,
+.clickedDiv {
+    background: #FEA52F;
+    color: #000
+}
+
+.application-stage:hover {
+    cursor: pointer
+}
+
+.apply-now {
+    margin: 30px auto;
+    background: RGB(242, 243, 244);
+    height: 44px;
+    color: #000;
+    padding: 11px
+}
+
+.benefits,
+.eligible-div {
+    padding: 40px 0;
+    text-align: center
+}
+
+.eligible-div {
+    margin-top: 3%;
+    margin-bottom: 1%
+}
+
+.criteria {
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    display: block!important
+}
+
+.deadline,
+.deadline-date {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 2%
+}
+
+.caption div {
+    font-size: .3em!important;
+    font-weight: 200
+}
+
+.deadline-date {
+    color: #FEA52F;
+    margin-bottom: 3%
+}
+
+.benefits,
+.benefits-main {
+    margin-bottom: 2%
+}
+
+.okay-color {
+    color: #FEA52F
+}
+
+.benefits {
+    margin-top: 2%
+}
+
+.timerDiv {
+    color: #000;
+    font-size: 3em;
+    font-weight: 900
+}
+
+nav ul li a {
+    color: #fff
+}
+
+.brand-logo:focus,
+.brand-logo:link,
+.brand-logo:visited,
+.home-apply-link a:focus,
+.home-apply-link a:hover,
+.home-apply-link a:link,
+.home-apply-link a:visited {
+    color: #FFF;
+    text-decoration: none!important
+}
+
+.brand-logo:hover {
+    text-decoration: none!important;
+    color: #FEA52F
+}
+
+.home-apply-link:hover {
+    background: rgba(254, 165, 47, .77);
+    opacity: 5
+}
+
+.overlay,
+.overlay-last-page {
+    opacity: .55;
+    background: #000
+}
+
+nav ul li.active>a,
+nav ul li.active>a:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #23d9da;
+    text-decoration: none!important
+}
+
+nav ul li:last-child {
+    border-radius: 2px;
+    background: #FEA52F
+}
+
+.navbar-toggle {
+    border: 2px solid #FEA52F!important
+}
+
+.navbar-toggle .icon-bar {
+    background: #FEA52F!important
+}
+
+.overlay-last-page {
+    min-height: 323px
+}
+
+.overlay-last-page1 {
+    background: #000;
+    opacity: .25;
+    min-height: 323px
+}
+
+.first-page-landing {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    min-height: 100%
+}
+
+.text-carousel {
+    margin-top: 3%
+}
+
+.landing-text {
+    color: #fff
+}
+
+.home-apply-link {
+    background: #FEA52F;
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 2px;
+    margin: 7% 0
+}
+
+.home-apply-link a {
+    color: #fff;
+    text-transform: uppercase
+}
+
+.landing-text h3 {
+    font-size: 3em;
+    margin-top: 5%
+}
+
+.landing-text h6 {
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-style: italic
+}
+
+.about-page,
+.last-page-first {
+    position: absolute;
+    color: #fff;
+    margin-top: 2%
+}
+
+.apply-now-link {
+    width: 210px;
+    margin: auto
+}
+
+.benefits-text::after,
+.benefits-text::before,
+.deadline::after,
+.deadline::before,
+.program::after,
+.program::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid RGB(205, 206, 207);
+    width: 23%
+}
+
+.nav-links {
+    margin-top: 32px;
+    font-size: .9em
+}
+
+.deadline::after,
+.deadline::before {
+    top: 60%
+}
+
+.benefits-text::before,
+.deadline::before {
+    left: 13%
+}
+
+.benefits-text::after,
+.deadline::after {
+    right: 13%
+}
+
+.program::before {
+    left: 10%
+}
+
+.program::after {
+    right: 10%
+}
+
+.benefits-text::after,
+.benefits-text::before,
+.program::after,
+.program::before {
+    top: 50%
+}
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .benefits-text::after,
+    .benefits-text::before,
+    .deadline::after,
+    .deadline::before,
+    .program::after,
+    .program::before {
+        display: none
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:400px) {
+    .last-page-three,
+    .overlay-last-page {
+        min-height: 323px
+    }
+    .timerDiv {
+        font-size: 2em;
+        font-weight: 900
+    }
+    .thumbnail .caption div {
+        font-size: 11px!important;
+        margin-left: -15px
+    }
+}
+
+@media only screen and (min-width:330px) and (max-width:600px) {
+    .last-page-three,
+    .overlay-last-page {
+        min-height: 323px
+    }
+    .overlay,
+    .page-one {
+        min-height: 770px!important
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:621px) {
+    .brand-img,
+    .brand-text {
+        display: inline-block;
+        vertical-align: middle
+    }
+    .brand-text {
+        width: 80%;
+        padding-left: 27px
+    }
+    .brand-img {
+        width: 20%
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:769px) {
+    .navbar-top-margin {
+        margin-top: 0
+    }
+    .overlay,
+    .page-one {
+        min-height: 760px
+    }
+}
+
+.navbar-brand {
+    min-height: 60px!important
+}
+
+@media only screen and (min-width:767px) and (max-width:985px) {
+    .brand-logo {
+        margin-left: 0!important;
+        font-size: .6em
+    }
+    .nav-links {
+        font-size: .7em
+    }
+}
+
+@media only screen and (min-width:321px) and (max-width:361px) {
+    .overlay,
+    .page-one {
+        min-height: 780px!important
+    }
+    .landing-text h3 {
+        margin-top: 5%
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:320px) {
+    .overlay,
+    .page-one {
+        min-height: 157vh
+    }
+    .last-page-three,
+    .overlay-last-page {
+        min-height: 323px
+    }
+    .landing-text h3 {
+        margin-top: 5%
+    }
+}
+
+.answer,
+.question {
+    text-align: center;
+    min-height: 50px
+}
+
+.question {
+    min-width: 300px;
+    background: #FEA52F;
+    padding: 14px 5px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 5px auto
+}
+
+.answer {
+    background: #f0f0f0;
+    margin: -4px 0;
+    padding: 10px 5px
+}
+
+.panel-background .panel-heading {
+    background: #FEA52F!important
+}
