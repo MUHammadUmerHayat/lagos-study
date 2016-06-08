@@ -1,0 +1,32 @@
+{
+  "name": "open_andela",
+  "version": "0.0.1",
+  "author": "Olatunde Garuba",
+  "description": "open andela lagos training program",
+  "homepage": "http://open.andela.com",
+  "engines": {
+    "node": ">=0.10.28",
+    "npm": ">=1.4.28"
+  },
+  "scripts": {
+    "start": "gulp",
+    "postinstall": "bower install --config.interactive=false"
+  },
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-livereload": "^3.0.2",
+    "gulp-minify": "0.0.5",
+    "gulp-uglify": "^1.5.3"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-babel": "^6.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-traceur": "^0.17.2",
+    "gulp-typescript": "^2.12.1"
+  }
+}
