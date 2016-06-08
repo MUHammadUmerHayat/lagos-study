@@ -3,9 +3,5 @@ node_modules/
 bower_components/
 app/
 bower.json
-<<<<<<< HEAD
 gulpfile.js
 CNAME
-=======
-gulpfile.js
->>>>>>> master
