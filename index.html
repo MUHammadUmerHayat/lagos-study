@@ -292,91 +292,28 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
-                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default panel-background">
-                                    <div class="panel-heading" role="tab" id="headingOne">
-                                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Is this an Internship?
-                            </a>
-                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            This is not an internship, it is a training program
+                            <div ng-controller="AccordionDemoCtrl">
+                                <script type="text/ng-template" id="group-template.html">
+                                    <div class="panel {{panelClass || 'panel-default'}}">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" style="color:#fa39c3">
+                                              <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span
+                                                ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-collapse collapse" collapse="!isOpen">
+                                            <div class="panel-body" style="text-align: right" ng-transclude></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="panel panel-default panel-background">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
-                                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              What is LASRRA?
-                            </a>
-                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body">
-                                            LASRRA is the Lagos State Residents Registration Agency
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default panel-background">
-                                    <div class="panel-heading" role="tab" id="headingThree">
-                                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              How do I register for LASRRA?
-                            </a>
-                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="panel-body">
-                                            Please go to the LASRRA home page to get more information on registration process.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default panel-background">
-                                    <div class="panel-heading" role="tab" id="headingFour">
-                                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              Do I need to reside in Lagos State to get the LASRRA Identification Number?
-                            </a>
-                        </h4>
-                                    </div>
-                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                        <div class="panel-body">
-                                            Unfortunately, you do need to reside in Lagos to receive the LASRRA ID number.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default panel-background">
-                                    <div class="panel-heading" role="tab" id="headingFive">
-                                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              Is the training program free?
-                            </a>
-                        </h4>
-                                    </div>
-                                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                        <div class="panel-body">
-                                            Yes, the program is free.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default panel-background">
-                                    <div class="panel-heading" role="tab" id="headingSix">
-                                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                              Is the program running during the week and weekends?
-                            </a>
-                        </h4>
-                                    </div>
-                                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                        <div class="panel-body">
-                                            The program only runs during the week
-                                        </div>
-                                    </div>
-                                </div>
+                                </script>
+                                
+                                <accordion close-others="oneAtATime">
+                                    <accordion-group heading="Is this an Internship?" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+                                        This is not an internship, it is a training program
+                                    </accordion-group>
+                                    <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+                                        {{group.content}}
+                                    </accordion-group>
                             </div>
                         </div>
                     </div>
