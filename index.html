@@ -261,6 +261,15 @@
                     </div>
                 </div>
             </div>
+            <div class="container-fluid">
+                <div class="col-xs-12 partners-column">
+                    <slick settings="slickConfig">
+                        <div ng-repeat="image in images">
+                            <img ng-src="{{ image.src }}" class="img-responsive carousel-image" alt="" />
+                        </div>
+                    </slick>
+                </div>
+            </div>
             <div class="row last-page-two">
                 <div id="about"></div>
                 <div class="col-xs-12" style="color: white">
